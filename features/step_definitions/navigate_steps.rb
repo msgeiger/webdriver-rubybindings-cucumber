@@ -28,7 +28,7 @@ Then /^I should see the title bar$/ do
         wdriver.wait_for_element_present({:id=>'title_navigation'}) 
 end
 
-Then /^I should see the title description$/ do
+And /^I should see the title description$/ do
         wdriver = Snippets.new(@browser, @wd_wait) 
         wdriver.wait_for_element_present({:id=>'main_title'}) 
 end
