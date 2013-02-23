@@ -1,4 +1,4 @@
-When /^I visit the marineby\.com home page$/ do
+When /^I visit each marineby\.com page$/ do
 
     wdriver = Snippets.new(@browser, @wd_wait) 
     testing_url = 'http://www.marinebay.com'
