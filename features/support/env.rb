@@ -13,6 +13,11 @@ if ENV["FIREFOX"] then
 elsif ENV["CHROME"] then
   browser = Selenium::WebDriver.for(:chrome)
 
+elsif ENV["PHANTOMJS"] then
+  browser = Selenium::WebDriver.for(:phantomjs)
+  wd_wait = Selenium::WebDriver::Wait.new(:timeout => 30) #ENV["TIMEOUT"] 
+  wd_url = ENV["URL"]
+
 elsif ENV["IE"] then
   browser = Selenium::WebDriver.for(:ie)
   wd_wait = Selenium::WebDriver::Wait.new(:timeout => 30) #ENV["TIMEOUT"] 
