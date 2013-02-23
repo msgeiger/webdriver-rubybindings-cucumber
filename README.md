@@ -2,5 +2,7 @@ webdriver-rubybindings-cucumber
 ===============================
 
 Install webdriver, the appropriate drivers, and cucumber
-~~~
-run cd ~/webdriver-rubybindings-cucumber/$cucumber -p ie features/navigate.feature
+
+cd ~/webdriver-rubybindings-cucumber/
+cucumber -p phantomjs features/navigate.feature
+cucumber -p ie features/navigate.feature
