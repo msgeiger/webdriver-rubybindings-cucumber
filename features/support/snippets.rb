@@ -1,4 +1,4 @@
-class Snippets
+class Snippets < Test::Unit::TestCase
   include Browser
 
   def initialize browser, wd_wait
