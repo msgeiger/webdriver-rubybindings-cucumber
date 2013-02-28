@@ -5,8 +5,8 @@ wip: -r features CHROME=TRUE DEMO=TRUE -t @wip
 
 # demo
 demo_smoke: -r features FIREFOX=TRUE DEMO=TRUE -t @smoke -c -f pretty -f html -o  results/local_smoke.html
-demo_firefox: -r features FIREFOX=TRUE DEMO=TRUE -t ~@wip -c -f pretty -f html -o  results/local_firefox.html
-demo_chrome: -r features CHROME=TRUE DEMO=TRUE -t ~@wip -c -f pretty -f html -o  results/local_chrome.html
+firefox: -r features FIREFOX=TRUE DEMO=TRUE -t ~@wip -c -f pretty -f html -o  results/local_firefox.html
+chrome: -r features CHROME=TRUE DEMO=TRUE -t ~@wip -c -f pretty -f html -o  results/local_chrome.html
 ie: -r features IE=TRUE DEMO=TRUE -t ~@wip -c -f pretty -f html -o  results/local_ie.html URL="http://www.marinebay.com" TIMEOUT=30
 phantomjs: -r features PHANTOMJS=TRUE DEMO=TRUE -t ~@wip -c -f pretty -f html -o  results/local_phantomjs.html URL="http://www.marinebay.com" TIMEOUT=30
 
